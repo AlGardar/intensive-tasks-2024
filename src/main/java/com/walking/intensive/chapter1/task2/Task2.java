@@ -37,7 +37,7 @@ public class Task2 {
     }
 
     static String getFlatLocation(int floorAmount, int entranceAmount, int flatNumber) {
-        int flatsPerFloor = 4;
+        final int flatsPerFloor = 4;
 
         if (validateInput(floorAmount, entranceAmount, flatNumber, flatsPerFloor)) {
             return "Такой квартиры не существует";
