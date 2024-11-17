@@ -34,7 +34,7 @@ public class Task1 {
 
         return switch (lastDigit) {
             case 1 -> "Вам %d год".formatted(age);
-            case 2,3,4 -> "Вам %d года".formatted(age);
+            case 2, 3, 4 -> "Вам %d года".formatted(age);
             default -> "Вам %d лет".formatted(age);
         };
     }
