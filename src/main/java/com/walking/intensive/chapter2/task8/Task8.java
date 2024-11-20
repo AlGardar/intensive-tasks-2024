@@ -25,7 +25,7 @@ public class Task8 {
     public static void main(String[] args) {
         int[] sumFrequency = new int[28];
 
-        for (int i = 0; i < 1000 ; i++) {
+        for (int i = 0; i < 1000; i++) {
             int sum = i / 100 + i / 10 % 10 + i % 10;
             sumFrequency[sum]++;
         }
@@ -47,7 +47,7 @@ public class Task8 {
     }
 
     private static int[] calculateSumFrequency() {
-        final int maxSumThreeDigits = 9 + 9 + 9;
+        final int maxSumThreeDigits = 3 * 9;
         final int threeDigitRangeLimit = 1000;
 
         int[] sumFrequency = new int[maxSumThreeDigits + 1];
